@@ -19,7 +19,7 @@ function App() {
     // Use the specific bg8bit.mp3 file
     audioRef.current.src = "/bg8bit.mp3";
     audioRef.current.loop = true;
-    audioRef.current.volume = 0.3;
+    audioRef.current.volume = 0.15;
 
     // Initialize jump sound effect
     jumpAudioRef.current = new Audio();
