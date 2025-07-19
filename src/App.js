@@ -131,6 +131,18 @@ function App() {
     setCurrentLaugh("");
   };
 
+  // Handle touch/tap for mobile devices
+  const handleFrogTouch = () => {
+    if ("ontouchstart" in window) {
+      // This is a touch device, trigger hover effect
+      handleMouseEnter();
+      // Clear the effect after a short delay
+      setTimeout(() => {
+        handleMouseLeave();
+      }, 1500);
+    }
+  };
+
   const handleBackflip = () => {
     handleFirstInteraction(); // Enable audio on first interaction
     if (isBackflipping) return; // Prevent multiple backflips at once
@@ -189,6 +201,8 @@ function App() {
               className={`frog-image ${isBackflipping ? "backflip" : ""}`}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
+              onTouchStart={handleFrogTouch}
+              onClick={handleFrogTouch}
             />
             {currentLaugh && <div className="laugh-bubble">{currentLaugh}</div>}
           </div>
