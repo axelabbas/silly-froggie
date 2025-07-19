@@ -176,8 +176,15 @@ function App() {
             )}
           </div>
           <div className="frog-container">
+            <div
+              className={`frog-background ${
+                isHovered || isBackflipping ? "scaled" : ""
+              }`}
+            ></div>
             <img
-              src={isHovered ? "/frog_opened.png" : "/frog.png"}
+              src={
+                isHovered || isBackflipping ? "/frog_opened.png" : "/frog.png"
+              }
               alt="Frog"
               className={`frog-image ${isBackflipping ? "backflip" : ""}`}
               onMouseEnter={handleMouseEnter}
