@@ -1,0 +1,14 @@
+// Free chiptune music file - you can replace this with any .mp3, .ogg, or .wav file
+// This file should contain your 8-bit chiptune background music
+
+// To add your own music:
+// 1. Find a free chiptune track from:
+//    - https://freemusicarchive.org (search "chiptune")
+//    - https://opengameart.org 
+//    - https://pixabay.com/music/search/chiptune/
+// 2. Download the file as "chiptune-bg.mp3" 
+// 3. Place it in this public folder
+// 4. The app will automatically use it
+
+// For testing, you can use this online chiptune:
+// https://pixabay.com/music/video-games-8-bit-arcade-138828/
